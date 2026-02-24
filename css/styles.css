@@ -1,0 +1,294 @@
+:root {
+    --color-iris: #4d5ae5;
+    --color-ocean: #404bbf;
+    --color-navy-blue: #2e2f42;
+    --color-green: #31d0aa;
+    --color-slate: #434455;
+    --color-light-slate: #8e8f99;
+    --color-cornflower: #e7e9fc;
+    --color-cloud: #f4f4fd;
+    --color-navy-blue-modal: #2e2f42;
+    --color-grey: #2e2f42;
+    --color-white: #ffffff;
+    --color-dairy: #fcfcfc;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-slate);
+    background-color: var(--color-white);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.02em
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+    color: currentColor
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section {
+    padding: 120px 0;
+}
+
+.title {
+    margin-bottom: 72px;
+    color: var(--color-navy-blue);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-cornflower);
+}
+
+
+.logo {
+    font-family: Raleway, sans-serif;
+    color: var(--color-iris);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.accent {
+    color: var(--color-navy-blue);
+}
+
+
+.link {
+    color: var(--color-navy-blue);
+}
+
+.nav-list {
+    gap: 40px;
+}
+
+.site-nav {
+    gap: 76px
+}
+
+.site-nav .link {
+    display: block;
+    font-weight: 500;
+    padding: 24px 0;
+}
+
+.link:hover {
+    color: var(--color-ocean);
+}
+
+.link:focus {
+    text-decoration: underline;
+    color: var(--color-ocean);
+}
+
+.address {
+    font-style: normal;
+}
+
+.contact-list {
+    gap: 40px;
+}
+
+.address .link {
+    color: var(--color-slate);
+}
+
+.address .link:hover {
+    color: var(--color-ocean);
+}
+
+.address .link:focus {
+    text-decoration: underline;
+    color: var(--color-ocean);
+}
+
+.section-service {
+    background-color: var(--color-navy-blue);
+
+}
+
+.container-service {
+    flex-direction: column;
+    gap: 48px;
+    padding: 188px 0;
+
+}
+
+.main-title {
+    max-width: 496px;
+    color: var(--color-white);
+    text-align: center;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em
+}
+
+.button {
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    color: var(--color-white);
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    background-color: var(--color-iris);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+
+}
+
+
+.button:hover,
+.button:focus {
+    background-color: var(--color-ocean);
+}
+
+.section-features li {
+    width: calc((100% - 3 * 24px) / 4);
+}
+
+.section-team {
+    background-color: var(--color-cloud);
+}
+
+.features-list {
+    gap: 24px
+}
+
+.team-text-card {
+    padding: 32px 16px
+}
+
+.team-list {
+    gap: 24px
+}
+
+.team-card {
+    background-color: var(--color-white);
+    border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 3 * 24px) / 4);
+}
+
+.portfolio-list {
+    flex-wrap: wrap;
+    gap: 24px
+}
+
+.portfolio-list li {
+    width: calc((100% - 2 * 24px) / 3);
+    border: 1px solid var(--color-cornflower);
+}
+
+.portfolio-card {
+    padding: 32px 16px;
+    border-top: none;
+}
+
+.section-title {
+    margin-bottom: 8px;
+    color: var(--color-navy-blue);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.section-text {
+    color: var(--color-slate);
+}
+
+.footer {
+    background-color: var(--color-navy-blue);
+    padding: 100px 0;
+
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.footer .accent {
+    color: var(--color-cloud);
+}
+
+.footer .section-text {
+    color: var(--color-cloud);
+    max-width: 264px;
+}
